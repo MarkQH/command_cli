@@ -4,14 +4,12 @@
   "main": "index.js",
   "license": "MIT",
   "bin": {
-    "duang": "index.js",
-    "mini": "mini.js"
+    "duang": "index.js"
   },
   "dependencies": {
     "chalk": "^2.4.2",
     "commander": "^3.0.1",
     "inquirer": "^7.0.0",
-    "lodash": "^4.17.15",
     "ora": "^4.0.1"
   }
 }
