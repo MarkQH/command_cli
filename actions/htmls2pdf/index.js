@@ -10,13 +10,14 @@ module.exports = () => {
     .alias('p')
     .description('转换网页为PDF文件')
     .option('-n, --name [name]', '文件名')
-    .option('-p, --path [path]', '文件路径')
-    .option('-t, --type [type]', 'pdf格式 A1 A2 A3 A4')
+    .option('-d, --dir [dir]', '文件路径')
+    .option('-t, --type [type]', 'pdf格式 Letter Legal Tabloid Ledger A0 A1 A2 A3 A4 A5 A6')
     .action( async (webs, option) => {
       if (webs.length) {
         for (url of webs) {
           await Pdf.getBrowser();
           await Pdf.convertPdf(url);
+          await Pdf.closeBrower();
         }
       } else {
         const config = _.assign({
