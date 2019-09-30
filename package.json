@@ -1,6 +1,6 @@
 {
   "name": "duang-cli",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "license": "MIT",
   "bin": {
@@ -8,7 +8,10 @@
   },
   "author": "lalavi@qq.com",
   "description": "make stufies",
-  "keywords": ["useful", "pdf"],
+  "keywords": [
+    "useful",
+    "pdf"
+  ],
   "homepage": "https://github.com/MarkQH/duang_cli",
   "bugs": "https://github.com/MarkQH/duang_cli/issues",
   "repository": {
