@@ -1,10 +1,19 @@
 {
-  "name": "duang",
+  "name": "duang-cli",
   "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "bin": {
     "duang": "index.js"
+  },
+  "author": "lalavi@qq.com",
+  "description": "make stufies",
+  "keywords": ["cool", "useful", "stuff"],
+  "homepage": "https://github.com/MarkQH/duang_cli",
+  "bugs": "https://github.com/MarkQH/duang_cli/issues",
+  "repository": {
+    "url": "https://github.com/MarkQH/duang_cli.git",
+    "type": "git"
   },
   "dependencies": {
     "chalk": "^2.4.2",
