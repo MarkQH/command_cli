@@ -1,5 +1,5 @@
-const puppeteer = require('puppeteer');
 const path = require('path');
+const puppeteer = require('puppeteer');
 
 class pdf {
   constructor() {
@@ -13,7 +13,14 @@ class pdf {
     return this.browser;
   }
 
-  static async convertPdf(url, name = new Date().getTime(), dir = `${__dirname}`, type = 'A4') {
+  static async convertPdf(url, name, dir, type) {
+    if(!url.startsWith('http://')) {
+      if(!url.startsWith('https://')) {
+        url = `http://${url}`
+      } else {
+        url = `https://${url}`
+      }
+    }
     const page = await this.browser.newPage();
     await page.goto(url, {waitUntil: 'networkidle2'});
     await page.pdf({path: path.resolve(dir,`${name}.pdf`), format: type, margin:{
