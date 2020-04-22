@@ -1,31 +1,22 @@
-> Duang
+# Duang something
 
-## Install
+🌰 暂时功能不多，按照提示操作即可，目前为了提升效率
+后续将继承更多功能，例如一键部署等
 
-```
-$ npm install duang-cli
-$ yarn add duang-cli
-```
+命令介绍
 
-## Usage
-
-#### 将页面转换为PDF文件
-```js
-duang p
-
-duang pdf [webUrl...]
-
-duang pdf [webUrl...] -f [fileName] -d [filePath] -t [pdf type]
-
-duang pdf --help
+🍎 安装脚手架
+```bash
+npm i -g duang-cli
 ```
 
+🍏 使用脚手架创建项目
 
-```js
-duang --help 获得更多帮助
+```bash
+duang create project-name
 ```
 
-## FAQ
-
-#### 目前可以duang出什么?
-- 把网页装换为PDF文件
+🍌 新建页面
+```bash
+duang page page-name
+```
