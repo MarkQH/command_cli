@@ -1,6 +1,6 @@
 {
   "name": "duang-cli",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "description": "借鉴了比较好的脚手架实践",
   "main": "index.js",
   "bin": {
