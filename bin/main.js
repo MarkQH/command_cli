@@ -4,6 +4,7 @@
 const chalk = require('chalk')
 const semver = require('semver')
 const requiredVersion = require('../package.json').engines.node
+const html2pdf = require('../actions/htmls2pdf');
 
 // 检测node版本函数
 /**
@@ -61,6 +62,9 @@ program
     const options = cleanArgs(cmd)
     require('../lib/page')(name, options)
   })
+
+// html转换为pdf工具
+html2pdf();
 
 program
   .arguments('<command>')
