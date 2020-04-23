@@ -21,8 +21,3 @@ duang create project-name
 ```bash
 duang page page-name
 ```
-
-:pear: 生成PDF
-```
-duang pdf [httpUrl]
-```
