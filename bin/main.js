@@ -52,15 +52,15 @@ program
     require('../lib/create')(name, options)
   })
 
-// 创建页面命令
-program
-  .command('page <page-name>')
-  .description('create a new page')
-  .option('-f, --force', 'Overwrite target directory if it exists')
-  .action((name, cmd) => {
-    const options = cleanArgs(cmd)
-    require('../lib/page')(name, options)
-  })
+// // 创建页面命令
+// program
+//   .command('page <page-name>')
+//   .description('create a new page')
+//   .option('-f, --force', 'Overwrite target directory if it exists')
+//   .action((name, cmd) => {
+//     const options = cleanArgs(cmd)
+//     require('../lib/page')(name, options)
+//   })
 
 program
   .arguments('<command>')

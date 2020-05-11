@@ -14,9 +14,10 @@ npm i -g duang-cli
 
 ```bash
 duang create project-name
+duang create project-name single_spa
 ```
 
-🍌 新建页面
-```bash
+<!-- 🍌 新建页面 -->
+<!-- ```bash
 duang page page-name
-```
+``` -->
